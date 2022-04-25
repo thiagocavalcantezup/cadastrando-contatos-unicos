@@ -119,6 +119,10 @@ public class CustomExceptionHandler {
             httpStatus = HttpStatus.UNPROCESSABLE_ENTITY;
 
             switch (constraintName.toUpperCase()) {
+                case "UK_DEPARTAMENTO_SIGLA":
+                    mensagemGeral = "Houve um problema com a sua requisição.";
+                    mensagemEspecifica = "Já existe um departamento cadastrado com essa sigla.";
+                    break;
                 default:
                     mensagemEspecifica = "Violação de restrição dos dados.";
                     break;
