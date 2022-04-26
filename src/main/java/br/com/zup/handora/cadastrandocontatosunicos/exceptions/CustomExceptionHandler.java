@@ -123,6 +123,10 @@ public class CustomExceptionHandler {
                     mensagemGeral = "Houve um problema com a sua requisição.";
                     mensagemEspecifica = "Já existe um departamento cadastrado com essa sigla.";
                     break;
+                case "UK_CONTATO_TELEFONE_DEPARTAMENTO":
+                    mensagemGeral = "Houve um problema com a sua requisição.";
+                    mensagemEspecifica = "Já existe um contato cadastrado com esse telefone nesse departamento.";
+                    break;
                 default:
                     mensagemEspecifica = "Violação de restrição dos dados.";
                     break;
